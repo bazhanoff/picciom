@@ -1,5 +1,5 @@
 @font-face {
-  font-family: PT-Sans;
+  font-family: "PT-Sans";
   src: url("../fonts/PT-Sans-Regular.woff") format("woff"), url("../fonts/PT-Sans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -9,6 +9,106 @@
   src: url("../fonts/PT-Sans-Bold.woff") format("woff"), url("../fonts/PT-Sans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.header__logo {
+  margin-right: 3rem;
+}
+.header__img {
+  display: block;
+}
+.header__schedules {
+  width: 20%;
+  margin-right: 3.2rem;
+}
+.header__schedule {
+  background-image: url("../images/clock.png");
+}
+.header__schedule:not(:last-of-type) {
+  margin-bottom: 2.2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  .header {
+    max-width: 1400px;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.main-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.icon {
+  padding-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.search {
+  width: 40%;
+  margin-right: 4.8rem;
+}
+.search__hint {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.search__row {
+  position: relative;
+}
+::-webkit-input-placeholder {
+  color: #b9b9bb;
+}
+.search__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.2rem 3.3rem 1.2rem 4.3rem;
+  border: 1px solid #b9b9bb;
+  background-image: url("../images/loupe.png");
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+}
+.search__button {
+  position: absolute;
+  top: .1rem;
+  right: .1rem;
+  padding-top: 2.3rem;
+  padding-right: 3.3rem;
+  text-indent: -9999px;
+  border: none;
+  background-color: #fff;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.address {
+  width: 26%;
+  font-style: normal;
+}
+.address__phone {
+  display: block;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: url("../images/phone.png");
+}
+.address__location {
+  display: block;
+  color: #000;
+  background-image: url("../images/location.png");
+}
+.address__email {
+  display: block;
+  color: #000;
+  background-image: url("../images/mail.png");
 }
 @media screen and (min-width: 1401px) {
   html {
@@ -33,7 +133,7 @@
 body {
   margin: 0;
   font-family: "PT-Sans", Arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   background: #fff;
 }
 h1 {

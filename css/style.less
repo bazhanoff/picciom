@@ -1,5 +1,10 @@
+@main-color: #384997;
+@white-color: #fff;
+@black-color: #000;
+@grey-color: #b9b9bb;
+
 @font-face{
-    font-family: PT-Sans;
+    font-family: "PT-Sans";
     src: url("../fonts/PT-Sans-Regular.woff") format("woff"),
          url("../fonts/PT-Sans-Regular.woff2") format("woff2");
     font-weight: 400;
@@ -14,6 +19,13 @@
     font-style: normal;
 }
 
+@import "blocks/page.less";
+@import "blocks/title.less";
+@import "blocks/header.less";
+@import "blocks/main-container.less";
+@import "blocks/icon.less";
+@import "blocks/search.less";
+@import "blocks/address.less";
 
 
 @media screen and (min-width: 1401px){
@@ -47,8 +59,8 @@
 body{
     margin: 0;
     font-family: "PT-Sans", Arial, sans-serif;
-    font-size: 1.6rem;
-    background: #fff;
+    font-size: 1.5rem;
+    background: @white-color;
 }
 
 h1{
