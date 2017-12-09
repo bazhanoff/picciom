@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>piccom</title>
@@ -39,25 +40,134 @@
                             </span>
                             <div class="search__row">
                                 <input class="search__input" name="search-request" type="search"
-                                placeholder="Например, погасить задолженность по ЖКХ в рассрочку">
+                                placeholder="Например, погасить задолженность по ЖКХ в рассрочку" required>
                                 <button class="search__button">Найти</button>
                             </div>
                         </label>
                     </form>
                 </div>
                 <address class="address">
-                    <a class="icon address__phone" href="tel:88412450054">
+                    <a class="link icon address__phone" href="tel:88412450054">
                         8 (8412) 450-054
                     </a>
-                    <a class="icon address__location" href="#">
+                    <a class="link icon address__location" href="#">
                         г. Пенза, ул. Карла Маркса, дом 5А, офис 309
                     </a>
-                    <a class="icon address__email" href="mailto:info@klychniki.ru">
+                    <a class="link icon address__email" href="mailto:info@klychniki.ru">
                         info@klychniki.ru
                     </a>
                 </address>
             </div>
         </header>
+        <nav class="menu">
+            <ul class="menu__list main-container">
+                <li class="menu__list-item">
+                    <a class="menu__link" href="#">
+                        Документы
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__link" href="#">
+                        Объекты
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__link" href="#">
+                        Новости
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__link" href="#">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page__container">
+            <div class="main-container page__content">
+                <main class="main">
+                    <h1 class="main__title title">
+                        Управляющие организации микрорайона Арбеково
+                    </h1>
+                    <div class="main__content">
+                        <p>
+                            Управляющие организации микрорайона Арбеково – это группа
+                            специализированных управляющих компаний, объединившихся в
+                            декабре 2013 года для обслуживания многоквартирных
+                            домов микрорайона Арбеково. В нее вошли следующие управляющие
+                            организации: УО «Жилье-9-1», УО «Жилье-10-1», УО «Жилье-11-1»,
+                            УО «Жилье-12-1», УО «Жилье-15-1» и УО «Запрудный-1».
+                        </p>
+                        <p>
+                            Управляющие компании микрорайона Арбеково имеют более
+                            чем 10-летний опыт работы в сфере управления МКД. На
+                            сегодняшний день под управлением компании находятся 353
+                            дома в самом развивающемся и благоустроенном районе Пензы.
+                        </p>
+                        <p>
+                            Компания обладает высококвалифицированным кадровым составом.
+                            В компании действует система обучения и повышения квалификации
+                            кадров. На объектах, обслуживаемых УО Арбеково трудятся около 100 человек.
+                        </p>
+                        <p>
+                            Управляющие организации микрорайона Арбеково предоставляют
+                            жителям полный комплекс услуг по профессиональному управлению
+                            и техническому обслуживанию жилищного фонда.
+                        </p>
+                        <ul>
+                            <li>
+                                Содержание помещений общего пользования (подъезды,
+                                лифтовые помещения, холлы и т.д.), регулярная уборка помещений
+                            </li>
+                            <li>
+                                Обеспечение услуг электроснабжения, теплоснабжения,
+                                горячего и холодного водоснабжения, вывоза бытовых отходов
+                            </li>
+                            <li>
+                                Уборка, благоустройство и озеленение придомовой территории, вывоз
+                                мусора, в зимнее время — уборка и вывоз снега
+                            </li>
+                            <li>
+                                Круглосуточная диспетчерская служба
+                            </li>
+                            <li>
+                                Проведение текущего ремонта общих помещений в доме, мест общего
+                                пользования, фасада дома, объектов благоустройства и придомовой
+                                территори
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+                <aside class="sidebar sidebar_padding">
+                    <article class="feedback">
+                        <h3 class="title feedback__title">
+                            Записаться на прием
+                        </h3>
+                        <form class="feedback__form" action="#" method="post">
+                            <label class="feedback__label">
+                                <span class="feedback__hint">
+                                    Введите ваше ФИО
+                                </span>
+                                <input class="feedback__input feedback__input_name-bg" name="feedback-name"
+                                placeholder="Например, Иванов Иван Иваныч" required>
+                            </label>
+                            <label class="feedback__label">
+                                <span class="feedback__hint">
+                                    Выберите дату приема
+                                </span>
+                                <input class="feedback__input feedback__input_date-bg" name="feedback-date"
+                                placeholder="Например, 23 января" required>
+                            </label>
+                            <button class="feedback__button">
+                                Записаться
+                            </button>
+                        </form>
+                    </article>
+                    <article class="documents">
+                    </article>
+                </aside>
+            </div>
+        </div>
     </div>
 </body>
 </html>

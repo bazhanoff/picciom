@@ -1,0 +1,55 @@
+.feedback__title{
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.feedback__form{
+    padding: 4.3rem 2.5rem 2.8rem;
+    background: #f5f9fa;
+}
+
+.feedback__label{
+    display: block;
+}
+
+.feedback__label:not(:last-child){
+    margin-bottom: 2.6rem;
+}
+
+.feedback__hint{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.feedback__input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.1rem 4.3rem;
+    border: 1px solid @grey-color;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.feedback__input_name-bg{
+    background-image: url("../images/loupe.png");
+}
+
+.feedback__input_date-bg{
+    background-image: url("../images/loupe.png");
+}
+
+.feedback__button{
+    padding: 1.5rem 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: @main-color;
+    color: @white-color;
+    text-transform: uppercase;
+    transition: background .3s;
+
+    &:hover, &:active{
+        background: #4758a5;
+    }
+}

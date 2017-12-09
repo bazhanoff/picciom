@@ -1,14 +1,16 @@
-@font-face {
-  font-family: "PT-Sans";
-  src: url("../fonts/PT-Sans-Regular.woff") format("woff"), url("../fonts/PT-Sans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+.page__container {
+  margin-top: 4rem;
 }
-@font-face {
-  font-family: "PT-Sans";
-  src: url("../fonts/PT-Sans-Bold.woff") format("woff"), url("../fonts/PT-Sans-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
+.page__content {
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  transition: color .3s;
+}
+.link:hover,
+.link:active {
+  color: #384997;
 }
 .title {
   margin-top: 0;
@@ -25,36 +27,42 @@
   display: block;
 }
 .header__schedules {
-  width: 20%;
-  margin-right: 3.2rem;
+  width: 14%;
+  margin-right: 3rem;
 }
 .header__schedule {
   background-image: url("../images/clock.png");
 }
 .header__schedule:not(:last-of-type) {
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.7rem;
+}
+.header__schedule-title {
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1600px) {
-  .header {
-    max-width: 1400px;
-  }
   .header__container {
     display: flex;
     align-items: center;
   }
 }
 .main-container {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media screen and (min-width: 1400px) {
+  .main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 .icon {
   padding-left: 2.5rem;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left 10%;
 }
 .search {
   width: 40%;
-  margin-right: 4.8rem;
+  margin-right: 4rem;
 }
 .search__hint {
   display: block;
@@ -74,7 +82,7 @@
   border: 1px solid #b9b9bb;
   background-image: url("../images/loupe.png");
   background-repeat: no-repeat;
-  background-position: 2% 50%;
+  background-position: 3% 50%;
 }
 .search__button {
   position: absolute;
@@ -89,19 +97,25 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.search__button:hover {
+  cursor: pointer;
+}
 .address {
-  width: 26%;
+  width: 20%;
   font-style: normal;
 }
 .address__phone {
   display: block;
+  margin-bottom: .5rem;
   color: #000;
   font-size: 2rem;
   font-weight: 700;
+  background-position: left 50%;
   background-image: url("../images/phone.png");
 }
 .address__location {
   display: block;
+  margin-bottom: .9rem;
   color: #000;
   background-image: url("../images/location.png");
 }
@@ -109,6 +123,104 @@
   display: block;
   color: #000;
   background-image: url("../images/mail.png");
+}
+.menu {
+  background: #384997;
+  font-size: 1.7rem;
+}
+.menu__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.menu__list-item {
+  float: left;
+}
+.menu__list:after {
+  display: block;
+  content: "";
+  clear: left;
+}
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 1.5rem;
+  color: #fff;
+  transition: background .3s,
+                border .3s;
+}
+.menu__link:hover:after,
+.menu__link:active:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+.menu__link:hover,
+.menu__link:active {
+  background: #4758a5;
+}
+.main {
+  width: 62%;
+}
+.main__title {
+  font-size: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+.sidebar {
+  width: 30%;
+}
+.sidebar_padding {
+  padding-top: .6rem;
+}
+.feedback__title {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.feedback__form {
+  padding: 4.3rem 2.5rem 2.8rem;
+  background: #f5f9fa;
+}
+.feedback__label {
+  display: block;
+}
+.feedback__label:not(:last-child) {
+  margin-bottom: 2.6rem;
+}
+.feedback__hint {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.feedback__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.1rem 4.3rem;
+  border: 1px solid #b9b9bb;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+.feedback__input_name-bg {
+  background-image: url("../images/loupe.png");
+}
+.feedback__input_date-bg {
+  background-image: url("../images/loupe.png");
+}
+.feedback__button {
+  padding: 1.5rem 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: #384997;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background .3s;
+}
+.feedback__button:hover,
+.feedback__button:active {
+  background: #4758a5;
 }
 @media screen and (min-width: 1401px) {
   html {
@@ -132,7 +244,7 @@
 }
 body {
   margin: 0;
-  font-family: "PT-Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 1.5rem;
   background: #fff;
 }
@@ -149,7 +261,9 @@ h4 {
   font-size: 1.375rem;
 }
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.7rem;
 }
 p:last-child {
   margin-top: 0;
@@ -162,4 +276,7 @@ img {
 }
 a {
   text-decoration: none;
+}
+ul {
+  line-height: 1.5;
 }

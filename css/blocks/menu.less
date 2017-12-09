@@ -1,0 +1,42 @@
+.menu{
+    background: @main-color;
+    font-size: 1.7rem;
+}
+
+.menu__list{
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.menu__list-item{
+    float: left;
+}
+
+.menu__list:after{
+    display: block;
+    content: "";
+    clear: left;
+}
+
+.menu__link{
+    position: relative;
+    display: block;
+    padding: 1.5rem;
+    color: @white-color;
+    transition: background .3s,
+                border .3s;
+
+    &:hover:after, &:active:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content:"";
+        width: 100%;
+        border-bottom: 2px solid @white-color;
+    }
+
+    &:hover, &:active{
+        background: #4758a5;
+    }
+}
