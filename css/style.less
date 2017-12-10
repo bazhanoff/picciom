@@ -17,6 +17,8 @@
 @import "blocks/feedback.less";
 @import "blocks/documents.less";
 @import "blocks/document.less";
+@import "blocks/news.less";
+@import "blocks/news-item.less";
 
 @media screen and (min-width: 1401px){
 
@@ -91,4 +93,12 @@ a{
 
 ul{
     line-height: 1.5;
+}
+
+::-webkit-input-placeholder{
+    color: @grey-color;
+}
+
+input, button, select, textarea{
+    font-size: 1.5rem;
 }
