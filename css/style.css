@@ -6,6 +6,7 @@
   justify-content: space-between;
 }
 .link {
+  color: #000;
   transition: color .3s;
 }
 .link:hover,
@@ -106,7 +107,6 @@
 .address__phone {
   display: block;
   margin-bottom: .5rem;
-  color: #000;
   font-size: 2rem;
   font-weight: 700;
   background-position: left 50%;
@@ -115,12 +115,10 @@
 .address__location {
   display: block;
   margin-bottom: .9rem;
-  color: #000;
   background-image: url("../images/location.svg");
 }
 .address__email {
   display: block;
-  color: #000;
   background-image: url("../images/mail.svg");
 }
 .menu {
@@ -285,6 +283,37 @@
 .news-item__title {
   font-size: 2rem;
 }
+.footer {
+  padding: 1.6rem 0 .8rem;
+  margin-top: 8.1rem;
+  background-color: #384997;
+  color: #fff;
+}
+.footer__copyright {
+  display: block;
+  text-align: right;
+  font-size: 1.3rem;
+}
+.props__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.props__container {
+  display: flex;
+}
+.props__info {
+  margin-right: 4.5rem;
+}
+.prop {
+  font-size: 1.3rem;
+}
+.prop:not(:last-child) {
+  margin-bottom: .4rem;
+}
+.prop__name {
+  margin-right: 1.4rem;
+  font-weight: 700;
+}
 @media screen and (min-width: 1401px) {
   html {
     font-size: 70%;
@@ -334,7 +363,6 @@ p:last-child {
 img {
   display: inline-block;
   max-width: 100%;
-  height: auto;
 }
 a {
   text-decoration: none;
