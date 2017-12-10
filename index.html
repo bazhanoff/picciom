@@ -6,13 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>piccom</title>
+    <!-- <link href="scripts/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" href="scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/datepicker.js"></script>
+    <script type="text/javascript" src="scripts/jquery.ui.datepicker-ru.js"></script> -->
 </head>
 <body>
     <div class="page">
         <header class="header">
             <div class="main-container header__container">
                 <div class="header__logo">
-                    <img class="header__img" src="images/logo.png" alt="ПИК-Комфорт">
+                    <img class="header__img" src="images/logo.svg" alt="ПИК-Комфорт">
                 </div>
                 <div class="header__schedules">
                     <div class="icon header__schedule">
@@ -156,7 +160,8 @@
                                     Выберите дату приема
                                 </span>
                                 <input class="feedback__input feedback__input_date-bg" name="feedback-date"
-                                placeholder="Например, 23 января" required>
+                                placeholder="Например, 23 января" type="text"
+                                onfocus="(this.type='date')" id="datepicker" required>
                             </label>
                             <button class="feedback__button">
                                 Записаться
@@ -164,6 +169,38 @@
                         </form>
                     </article>
                     <article class="documents">
+                        <h3 class="title documents__title">
+                            Документы
+                        </h3>
+                        <div class="documents__container">
+                            <div class="document">
+                                <a class="document__link" href="#" title="Скчать документ">
+                                    <img class="document__img" src="images/pdf.svg"
+                                    alt="pdf - файл">
+                                    <span class="document__name">
+                                        Лицензия
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="document">
+                                <a class="document__link" href="#" title="Скчать документ">
+                                    <img class="document__img" src="images/pdf.svg"
+                                    alt="pdf - файл">
+                                    <span class="document__name">
+                                        Свидетельств о государственной регистрации
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="document">
+                                <a class="document__link" href="#" title="Скчать документ">
+                                    <img class="document__img" src="images/pdf.svg"
+                                    alt="pdf - файл">
+                                    <span class="document__name">
+                                        Свидетельств о постановки на налоговый учет
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </article>
                 </aside>
             </div>

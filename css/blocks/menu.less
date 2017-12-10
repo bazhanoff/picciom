@@ -1,6 +1,5 @@
 .menu{
     background: @main-color;
-    font-size: 1.7rem;
 }
 
 .menu__list{
@@ -22,10 +21,10 @@
 .menu__link{
     position: relative;
     display: block;
-    padding: 1.5rem;
+    padding: 1rem;
     color: @white-color;
     transition: background .3s,
-                border .3s;
+                border .3s; //Свойство не работает из-за нескольких псевдосостояний!!!
 
     &:hover:after, &:active:after{
         position: absolute;

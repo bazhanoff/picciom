@@ -19,6 +19,7 @@
 .header {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-size: 1.5rem;
 }
 .header__logo {
   margin-right: 3rem;
@@ -27,11 +28,11 @@
   display: block;
 }
 .header__schedules {
-  width: 14%;
+  width: 15%;
   margin-right: 3rem;
 }
 .header__schedule {
-  background-image: url("../images/clock.png");
+  background-image: url("../images/time.svg");
 }
 .header__schedule:not(:last-of-type) {
   margin-bottom: 1.7rem;
@@ -56,7 +57,7 @@
   }
 }
 .icon {
-  padding-left: 2.5rem;
+  padding-left: 2.7rem;
   background-repeat: no-repeat;
   background-position: left 10%;
 }
@@ -80,7 +81,7 @@
   box-sizing: border-box;
   padding: 1.2rem 3.3rem 1.2rem 4.3rem;
   border: 1px solid #b9b9bb;
-  background-image: url("../images/loupe.png");
+  background-image: url("../images/loupe.svg");
   background-repeat: no-repeat;
   background-position: 3% 50%;
 }
@@ -93,7 +94,7 @@
   text-indent: -9999px;
   border: none;
   background-color: #fff;
-  background-image: url("../images/arrow.png");
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -111,22 +112,21 @@
   font-size: 2rem;
   font-weight: 700;
   background-position: left 50%;
-  background-image: url("../images/phone.png");
+  background-image: url("../images/phone.svg");
 }
 .address__location {
   display: block;
   margin-bottom: .9rem;
   color: #000;
-  background-image: url("../images/location.png");
+  background-image: url("../images/location.svg");
 }
 .address__email {
   display: block;
   color: #000;
-  background-image: url("../images/mail.png");
+  background-image: url("../images/mail.svg");
 }
 .menu {
   background: #384997;
-  font-size: 1.7rem;
 }
 .menu__list {
   margin-top: 0;
@@ -144,7 +144,7 @@
 .menu__link {
   position: relative;
   display: block;
-  padding: 1.5rem;
+  padding: 1rem;
   color: #fff;
   transition: background .3s,
                 border .3s;
@@ -170,10 +170,13 @@
   margin-bottom: 2.8rem;
 }
 .sidebar {
-  width: 30%;
+  width: 31%;
 }
 .sidebar_padding {
   padding-top: .6rem;
+}
+.feedback {
+  margin-bottom: 5.4rem;
 }
 .feedback__title {
   font-size: 2.6rem;
@@ -203,13 +206,13 @@
   background-position: 5% 50%;
 }
 .feedback__input_name-bg {
-  background-image: url("../images/loupe.png");
+  background-image: url("../images/person.svg");
 }
 .feedback__input_date-bg {
-  background-image: url("../images/loupe.png");
+  background-image: url("../images/date.svg");
 }
 .feedback__button {
-  padding: 1.5rem 0;
+  padding: 1.3rem 0;
   width: 100%;
   border: none;
   cursor: pointer;
@@ -221,6 +224,25 @@
 .feedback__button:hover,
 .feedback__button:active {
   background: #4758a5;
+}
+.documents__title {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768) {
+  .documents__container {
+    display: flex;
+  }
+}
+.document__link {
+  display: flex;
+  align-items: center;
+  color: #4758a5;
+  margin-top: 1.6rem;
+}
+.document__img {
+  width: 12%;
+  margin-right: .9rem;
 }
 @media screen and (min-width: 1401px) {
   html {
@@ -245,7 +267,7 @@
 body {
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   background: #fff;
 }
 h1 {
@@ -263,7 +285,6 @@ h4 {
 p {
   margin-bottom: 2rem;
   line-height: 1.5;
-  font-size: 1.7rem;
 }
 p:last-child {
   margin-top: 0;
