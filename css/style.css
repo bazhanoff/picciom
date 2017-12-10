@@ -22,16 +22,36 @@
   padding-bottom: 4rem;
   font-size: 1.5rem;
 }
-.header__logo {
-  width: 15%;
-  margin-right: 3rem;
+@media screen and (min-width: 1070px) {
+  .header__logo {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 1069px) {
+  .header__logo {
+    width: 25%;
+  }
+}
+.header__link {
+  display: block;
 }
 .header__img {
   display: block;
 }
-.header__schedules {
-  width: 15%;
-  margin-right: 3rem;
+@media screen and (min-width: 1070px) and (max-width: 1275px) {
+  .header__schedules {
+    width: 17%;
+  }
+}
+@media screen and (min-width: 1276px) {
+  .header__schedules {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 1069px) {
+  .header__schedules {
+    width: 30%;
+  }
 }
 .header__schedule {
   background-image: url("../images/time.svg");
@@ -45,7 +65,9 @@
 @media screen and (min-width: 768px) and (max-width: 1600px) {
   .header__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .main-container {
@@ -65,7 +87,25 @@
 }
 .search {
   width: 40%;
-  margin-right: 4rem;
+}
+@media screen and (min-width: 1276px) {
+  .search {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1070px) and (max-width: 1275px) {
+  .search {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1069px) {
+  .search {
+    order: 1;
+    width: 100%;
+  }
+  .search__input {
+    background-position: 1% 50%;
+  }
 }
 .search__hint {
   display: block;
@@ -82,7 +122,11 @@
   border: 1px solid #b9b9bb;
   background-image: url("../images/loupe.svg");
   background-repeat: no-repeat;
-  background-position: 3% 50%;
+}
+@media screen and (min-width: 1070px) {
+  .search__input {
+    background-position: 3% 50%;
+  }
 }
 .search__button {
   position: absolute;
@@ -101,8 +145,17 @@
   cursor: pointer;
 }
 .address {
-  width: 20%;
   font-style: normal;
+}
+@media screen and (max-width: 1069px) {
+  .address {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .address {
+    width: 20%;
+  }
 }
 .address__phone {
   display: block;
@@ -221,9 +274,18 @@
 .feedback__button:active {
   background: #4758a5;
 }
+.documents__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
 .documents__title {
   font-size: 2.6rem;
-  margin-bottom: 3rem;
+}
+.documents__link {
+  font-size: 1.5rem;
+  color: #4758a5;
 }
 @media screen and (min-width: 768) {
   .documents__container {
@@ -237,7 +299,7 @@
   margin-top: 1.6rem;
 }
 .document__img {
-  width: 12%;
+  width: 10%;
   margin-right: .9rem;
 }
 .news {

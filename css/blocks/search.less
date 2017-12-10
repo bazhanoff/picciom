@@ -1,6 +1,33 @@
 .search{
     width: 40%;
-    margin-right: 4rem;
+}
+
+@media screen and (min-width: 1276px){
+
+    .search{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1275px){
+
+    .search{
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 1069px){
+
+    .search{
+        order: 1;
+        width: 100%;
+    }
+
+    .search__input{
+        background-position: 1% 50%;
+    }
 }
 
 .search__hint{
@@ -20,7 +47,13 @@
     border: 1px solid @grey-color;
     background-image: url("../images/loupe.svg");
     background-repeat: no-repeat;
-    background-position: 3% 50%;
+}
+
+@media screen and (min-width: 1070px){
+
+    .search__input{
+        background-position: 3% 50%;
+    }
 }
 
 .search__button{
