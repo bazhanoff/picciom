@@ -22,6 +22,7 @@
   font-size: 1.5rem;
 }
 .header__logo {
+  width: 15%;
   margin-right: 3rem;
 }
 .header__img {
