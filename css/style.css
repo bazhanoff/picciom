@@ -1,3 +1,8 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .page__container {
   margin-top: 4rem;
 }
@@ -6,6 +11,10 @@
     display: flex;
     justify-content: space-between;
   }
+}
+.content {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .link {
   color: #000;
@@ -378,6 +387,8 @@
   font-size: 2rem;
 }
 .footer {
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 1.6rem 0 .8rem;
   margin-top: 8.1rem;
   background-color: #384997;
@@ -420,15 +431,19 @@
 }
 @media screen and (min-width: 400px) and (max-width: 767px) {
   html {
-    font-size: 60%;
+    font-size: 62.5%;
   }
 }
 @media screen and (max-width: 399px) {
   html {
-    font-size: 32.5%;
+    font-size: 62.5%;
   }
 }
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 1.7rem;

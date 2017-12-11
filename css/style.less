@@ -4,6 +4,7 @@
 @grey-color: #b9b9bb;
 
 @import "blocks/page.less";
+@import "blocks/content.less";
 @import "blocks/link.less";
 @import "blocks/title.less";
 @import "blocks/header.less";
@@ -40,18 +41,23 @@
 @media screen and (min-width: 400px) and (max-width: 767px){
 
     html{
-        font-size: 60%;
+        font-size: 62.5%;
     }
 }
 
 @media screen and (max-width: 399px){
 
     html{
-    font-size: 32.5%;
+    font-size: 62.5%;
   }
 }
 
+html{
+    height: 100%;
+}
+
 body{
+    height: 100%;
     margin: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 1.7rem;
