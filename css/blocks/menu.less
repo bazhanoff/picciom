@@ -2,6 +2,38 @@
     background: @main-color;
 }
 
+.menu__button{
+    background: @white-color;
+    border: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#384997'/><rect y='24' width='30' height='6' fill='#384997'/><rect y='12' width='30' height='6' fill='#384997'/></svg>");
+    background-size: contain;
+}
+
+@media screen and (max-width: 767px){
+
+    .menu__button{
+        display: block;
+    }
+
+    .menu__list{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .menu__button{
+        display: none;
+    }
+}
+
 .menu__list{
     margin-top: 0;
     margin-bottom: 0;

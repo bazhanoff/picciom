@@ -1,9 +1,11 @@
 .page__container {
   margin-top: 4rem;
 }
-.page__content {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .page__content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .link {
   color: #000;
@@ -71,8 +73,8 @@
   }
 }
 .main-container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 1400px) {
   .main-container {
@@ -130,9 +132,9 @@
 }
 .search__button {
   position: absolute;
-  top: .1rem;
-  right: .1rem;
-  padding-top: 2.3rem;
+  top: .2rem;
+  right: .2rem;
+  padding-top: 2.2rem;
   padding-right: 3.3rem;
   text-indent: -9999px;
   border: none;
@@ -177,6 +179,32 @@
 .menu {
   background: #384997;
 }
+.menu__button {
+  background: #fff;
+  border: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#384997'/><rect y='24' width='30' height='6' fill='#384997'/><rect y='12' width='30' height='6' fill='#384997'/></svg>");
+  background-size: contain;
+}
+@media screen and (max-width: 767px) {
+  .menu__button {
+    display: block;
+  }
+  .menu__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
 .menu__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -211,18 +239,19 @@
 .menu__link:active {
   background: #4758a5;
 }
-.main {
-  width: 62%;
+@media screen and (min-width: 768px) {
+  .main {
+    width: 62%;
+  }
 }
 .main__title {
   font-size: 2.8rem;
   margin-bottom: 2.8rem;
 }
-.sidebar {
-  width: 31%;
-}
-.sidebar_padding {
-  padding-top: .6rem;
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 31%;
+  }
 }
 .feedback {
   margin-bottom: 5.4rem;
@@ -244,6 +273,7 @@
 .feedback__hint {
   display: block;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .feedback__input {
