@@ -1,25 +1,63 @@
 .header{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1070px){
+@media screen and (min-width: 768px){
 
-    .header__logo{
-        width: 15%;
+    .header{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
 
-@media screen and (max-width: 1069px){
+@media screen and (max-width: 767px){
 
-    .header__logo{
-        width: 25%;
+    .header{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid @main-color;
     }
 }
 
-.header__link{
-    display: block;
+@media screen and (min-width: 768px) and (max-width: 1400px){
+
+    .header__logo{
+        width: 212px;
+        flex: none;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 651px){
+
+    .header__logo{
+        width: 20rem;
+        margin-right: 2rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .header__logo{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 651px){
+
+    .header__link{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .header__link{
+        display: inline-block;
+        width: 20rem;
+    }
 }
 
 .header__img{
@@ -41,10 +79,35 @@
     }
 }
 
-@media screen and (max-width: 1069px){
+@media screen and (min-width: 768px) and (max-width: 1069px){
 
     .header__schedules{
         width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 651px){
+
+    .header__schedules{
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 400px){
+
+    .header__schedules{
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 399px){
+
+    .header__schedules{
+        margin-top: 1rem;
     }
 }
 
@@ -60,7 +123,7 @@
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px){
+@media screen and (min-width: 768px){
 
     .header__container{
         display: flex;

@@ -2,27 +2,79 @@
     font-style: normal;
 }
 
-@media screen and (max-width: 1069px){
-
-    .address{
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 1070px){
+@media screen and (min-width: 1128px){
 
     .address{
         width: 20%;
     }
 }
 
+@media screen and (min-width: 1070px) and (max-width: 1127px){
+
+    .address{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1069px){
+
+    .address{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 651px){
+
+    .address{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 400px){
+
+    .address{
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+
+@media screen and (max-width: 399px){
+
+    .address{
+        margin-top: 2rem;
+    }
+}
+
+// @media screen and (min-width: 1070px){
+//
+//     .address{
+//         width: 20%;
+//     }
+// }
+
 .address__phone{
     display: block;
     margin-bottom: .5rem;
-    font-size: 2rem;
     font-weight: 700;
     background-position: left 50%;
     background-image: url("../images/phone.svg");
+}
+
+@media screen and (min-width: 1128px){
+
+    .address__phone{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1127px){
+
+    .address__phone{
+        font-size: 1.7rem;
+    }
 }
 
 .address__location{
