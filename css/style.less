@@ -113,3 +113,11 @@ ul{
 input, button, select, textarea{
     font-size: 1.5rem;
 }
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
