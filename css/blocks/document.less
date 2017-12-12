@@ -5,17 +5,50 @@
 
 .document__link{
     color: #4758a5;
-    display: flex;
-    align-items: center;
-
 }
 
 .document__img{
     width: 40px;
-    flex: none;
-    margin-right: .9rem;
+    margin-right: .5rem;
 }
 
-.document__name{
-    flex-grow: 1;
+@media screen and (min-width: 768px){
+
+    .document__link{
+        display: flex;
+        align-items: center;
+    }
+
+    .document__img{
+        flex: none;
+    }
+
+    .document__name{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .document__link{
+        display: block;
+    }
+
+    .document__img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .document__name{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 462px){
+
+
+    .document__name{
+        width: 70%;
+    }
 }
