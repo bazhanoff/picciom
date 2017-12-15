@@ -3,17 +3,17 @@
     align-items: flex-start;
 }
 
+.news-item__layout:not(:last-child){
+    margin-bottom: 4.4rem;
+}
+
 .news-item__date{
     margin-right: 1.9rem;
     line-height: 1;
     text-align: center;
-}
 
-@media screen and (max-width: 768px){
-
-    .news-item__date{
-        width: 8%;
-    }
+    flex: none;
+    width: 47px;
 }
 
 .news-item__number{
@@ -55,22 +55,6 @@
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 651px){
-
-    .news-item__titl{
-        font-size: 2rem;
-    }
-
-}
-
-@media screen and (max-width: 650px){
-
-    .news-item__titl{
-        font-size: 1.7rem;
-    }
-
-}
-
-.news-item__title{
-    font-size: 2rem;
+.news-item__content{
+    margin-top: 1.5rem;
 }

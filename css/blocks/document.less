@@ -1,5 +1,5 @@
 .document{
-    margin-bottom: 1.6rem;
+    margin-bottom: 5rem;
 }
 
 .document__link{
@@ -7,16 +7,9 @@
 }
 
 .document__img{
-    margin-right: .5rem;
+    width: 40px;
+    height: 40px;
 }
-
-
-
-@media screen and (min-width: 768px){
-
-    .document__img{
-        width: 40px;
-    }
 
     .document__link{
         display: flex;
@@ -25,35 +18,17 @@
 
     .document__img{
         flex: none;
+        margin-right: 9px;
     }
 
     .document__name{
         flex-grow: 1;
     }
-}
 
-@media screen and (max-width: 767px){
-
-    .document__link{
-        display: block;
-    }
-
-    .document__img{
-        width: 10%;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .document__name{
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
-@media screen and (max-width: 462px){
+@media screen and (max-width: 423px){
 
 
     .document__name{
-        width: 70%;
+        font-size: 1.5rem;
     }
 }

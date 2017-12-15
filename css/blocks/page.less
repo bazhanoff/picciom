@@ -1,10 +1,7 @@
-@media screen and (min-width: 768px){
-
-    .page{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .page__container{
@@ -16,4 +13,32 @@
     .page__content{
         display: flex;
     }
+}
+
+.page__title{
+    margin-bottom: 2.8rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .page__grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .page__group{
+        width: 30%;
+    }
+
+    .page__group:not(:nth-child(3n)){
+        margin-right: 5%;
+    }
+}
+
+.page__document{
+    margin-bottom: 1.6rem;
+}
+
+.page__pagination{
+    margin-top: 6.1rem;
 }
