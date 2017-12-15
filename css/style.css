@@ -621,6 +621,9 @@
   width: 47px;
 }
 .news-item__number {
+  font-weight: 700;
+  color: #384997;
+  margin-bottom: .8rem;
   display: block;
 }
 .news-item__number {
@@ -759,13 +762,70 @@
 .pagination__arrow {
   color: #384997;
 }
+.contacts__column-name {
+  margin-bottom: 3rem;
+}
+.contacts__info-name {
+  font-size: 1.8rem;
+}
+.contacts__info-content {
+  font-size: 1.6rem;
+}
 @media screen and (min-width: 768px) {
   .contacts__column {
     width: 50%;
   }
   .contacts__info {
-    width: 45%;
+    width: 35%;
   }
+}
+.contacts__info {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 951px) {
+  .contacts__info {
+    padding-left: 3.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__info {
+    padding-left: 3.2rem;
+  }
+}
+.contacts__phone {
+  background-image: url("../images/phone.svg");
+}
+.contacts__address {
+  background-image: url("../images/time.svg");
+}
+.contacts__mail {
+  background-image: url("../images/mail.svg");
+}
+.contacts__schedule {
+  background-image: url("../images/location.svg");
+}
+.object {
+  position: relative;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  display: block;
+}
+.object:before {
+  display: block;
+  content: "";
+  padding-top: 66%;
+  background-color: #b9b9bb;
+}
+.object__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.object__text {
+  display: block;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 1401px) {
   html {
