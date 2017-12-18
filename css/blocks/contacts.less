@@ -4,6 +4,7 @@
 
 .contacts__info-name{
     font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .contacts__info-content{
@@ -12,13 +13,22 @@
 
 @media screen and (min-width: 768px){
 
+    .contacts{
+        padding-left: 2rem;
+    }
+
     .contacts__column{
         width: 50%;
+    }
+
+    .contacts__column-name{
+        font-size: 2.2rem;
     }
 
     .contacts__info{
         width: 35%;
     }
+
 }
 
 .contacts__info{
@@ -35,6 +45,10 @@
 
 @media screen and (max-width: 767px){
 
+    .contacts__column-name{
+        font-size: 2rem;
+    }
+
     .contacts__info{
         padding-left: 3.2rem;
     }
@@ -45,7 +59,7 @@
 }
 
 .contacts__address{
-    background-image: url("../images/time.svg");
+    background-image: url("../images/location.svg");
 }
 
 .contacts__mail{
@@ -53,5 +67,5 @@
 }
 
 .contacts__schedule{
-    background-image: url("../images/location.svg");
+    background-image: url("../images/time.svg");
 }

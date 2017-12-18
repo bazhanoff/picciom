@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>piccom</title>
+    <title>Главная</title>
 </head>
 <body>
 <div class="page">
@@ -62,11 +62,9 @@
                     </address>
                 </div>
             </header>
-            <nav class="menu">
-                <input class="menu__button" type="checkbox" id="menu-button">
-                <label class="menu__switch" for="menu-button">
-                    Меню
-                </label>
+            <nav id="burger-menu" class="menu">
+                <button class="menu__button" type="button" id="menu-button">
+                </button>
                 <ul class="menu__list main-container">
                     <li class="menu__list-item">
                         <a class="menu__link" href="documents.html">
@@ -378,5 +376,6 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/burger-menu.js"></script>
 </body>
 </html>
