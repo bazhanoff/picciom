@@ -37,16 +37,14 @@
                     </div>
                     <div class="search">
                         <form class="search__form" action="#" method="get">
-                            <label class="search__label">
-                                <span class="search__hint">
-                                    Не можете что-то найти? Введите запрос
-                                </span>
-                                <div class="search__row">
-                                    <input class="search__input" name="search-request" type="search"
-                                    placeholder="Например, погасить задолженность по ЖКХ в рассрочку" required>
-                                    <button class="search__button">Найти</button>
-                                </div>
+                            <label class="search__hint" for="search-input">
+                                Не можете что-то найти? Введите запрос
                             </label>
+                            <div class="search__row">
+                                <input id="search-input" class="search__input" name="search-request" type="search"
+                                placeholder="Например, погасить задолженность по ЖКХ в рассрочку" required>
+                                <button class="search__button">Найти</button>
+                            </div>
                         </form>
                     </div>
                     <address class="address">
