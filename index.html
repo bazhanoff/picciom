@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pikaday.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -161,8 +162,8 @@
                                         Выберите дату приема
                                     </span>
                                     <input class="feedback__input feedback__input_date-bg" name="feedback-date"
-                                    placeholder="Например, 23 января" type="text"
-                                    onfocus="(this.type='date')" id="datepicker" required>
+                                    placeholder="Например, 23 января" id="datepicker" required>
+                                    <!-- onfocus="(this.type='date')" type="date"-->
                                 </label>
                                 <button class="feedback__button">
                                     Записаться
@@ -377,5 +378,30 @@
         </footer>
     </div>
     <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/pikaday.js"></script>
+    <script>
+        (function(){
+            var dateField = document.getElementById('datepicker');
+            var picker = new Pikaday({
+                field: dateField,
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020],
+                i18n: {
+                    previousMonth : 'Предыдущий месяц',
+                    nextMonth     : 'Следующий месяц',
+                    months        : ['Январь','Февраль','Март','Апрель','Май','ИюньИюль','July','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+                    weekdays      : ['Воскресенье', 'Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+                    weekdaysShort : ['Вс', 'Пн','Вт','Ср','Чт','Пт','Сб']
+                },
+                onSelect: function() {
+                    moment.locale('ru');
+                    dateField.value = this.getMoment().format('LL');
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
